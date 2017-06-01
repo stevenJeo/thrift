@@ -10,23 +10,25 @@ public class Teee {
 
     public static void main(String[] args) throws Exception {
 
-        Object lock = new Object();
-
-        Thread t = new Thread(new Run_1(lock));
-        t.setName("Test-Thread——1");
-        t.start();
-
+//        Object lock = new Object();
+//
+//        Thread t = new Thread(new Run_1(lock));
+//        t.setName("Test-Thread——1");
+//        t.start();
+//
+////        Thread.sleep(1000);
+//
+//        Thread t2 = new Thread(new Run_2(lock));
+//        t2.setName("Test-Thread-2");
+//        t2.start();
 //        Thread.sleep(1000);
+//        synchronized (lock) {
+////            lock.notify();
+//            lock.notifyAll();
+//        }
 
-        Thread t2 = new Thread(new Run_2(lock));
-        t2.setName("Test-Thread-2");
-        t2.start();
-        Thread.sleep(1000);
-        synchronized (lock) {
-//            lock.notify();
-            lock.notifyAll();
-        }
-
+        int it = 1<<31;
+        System.out.print(it + ":"+Integer.MIN_VALUE+","+Integer.MAX_VALUE);
 
     }
 

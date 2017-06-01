@@ -27,24 +27,25 @@ public class AcceptEventHandler implements EventHandler {
     }
 
     public void handleEvent(SelectionKey handle) throws Exception {
-        System.out.println("===== Accept Event Handler =====");
+//        System.out.println("===== Accept Event Handler =====");
         ServerSocketChannel serverSocketChannel = (ServerSocketChannel) handle.channel();
 
-        System.out.println("..handle.isReadable()=" + handle.isReadable() + ", handle.isWritable()" + handle.isWritable());
+//        System.out.println("..handle.isReadable()=" + handle.isReadable() + ", handle.isWritable()" + handle.isWritable());
 
         SocketChannel socketChannel = serverSocketChannel.accept();
         SocketAddress localAddress = socketChannel.getLocalAddress();
         SocketAddress remoteAddress = socketChannel.getRemoteAddress();
         System.out.println("\n" + "localAddress:" + localAddress.toString()
-                + ", remoteAddress:" + remoteAddress.toString() + "\n");
+                + ", remoteAddress:" + remoteAddress.toString()
+                + ", channel:" + handle.channel() + "\n");
 
         if (socketChannel != null) {
             socketChannel.configureBlocking(false);
-            System.out.println("===== Accept Event Handler..channel =====");
-            if (t < 1) {
+//            System.out.println("===== Accept Event Handler..channel =====");
+//            if (t < 1) {
                 socketChannel.register(demultiplexer, SelectionKey.OP_READ);
-                t++;
-            }
+//                t++;
+//            }
 //            if(t==1){
 //                socketChannel.register(demultiplexer, SelectionKey.OP_WRITE);
 //                t++;

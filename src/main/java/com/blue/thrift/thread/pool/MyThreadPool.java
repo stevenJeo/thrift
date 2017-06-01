@@ -31,9 +31,13 @@ public class MyThreadPool {
                 new ArrayBlockingQueue<Runnable>(10));
 //                Executors.defaultThreadFactory(),
 //                new ThreadPoolExecutor.AbortPolicy());
-
         customPool.setThreadFactory(Executors.defaultThreadFactory());
         customPool.setRejectedExecutionHandler(new ThreadPoolExecutor.AbortPolicy());
+
+        //newCachedThreadPool
+        ThreadPoolExecutor myCachedThreadPool = new ThreadPoolExecutor(0, Integer.MAX_VALUE,
+                60L, TimeUnit.SECONDS,
+                new SynchronousQueue<Runnable>());
 
         //提交任务
 //        customPool.execute();

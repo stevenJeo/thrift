@@ -22,8 +22,9 @@ public class ReactorSimple {
     private Selector selector;
     private Map<Integer, EventHandler> registers = new ConcurrentHashMap<Integer, EventHandler>();
 
-    public ReactorSimple()throws Exception{
-        selector = Selector.open();
+    public ReactorSimple(Selector selector)throws Exception{
+//        this.selector = Selector.open();
+        this.selector = selector;
     }
     public Selector getSelector(){
         return selector;
@@ -33,7 +34,10 @@ public class ReactorSimple {
         registers.put(evenType, eventHandler);
     }
     public void registerChannel(int eventType, SelectableChannel channel)throws Exception{
+//        channel.register()
         channel.register(selector, eventType);
+
+//        channel.
     }
 
     public void run(){
@@ -51,18 +55,16 @@ public class ReactorSimple {
                     if(selectionKey.isAcceptable()){//新连接
                         AcceptEventHandler eventHandler = (AcceptEventHandler)registers.get(SelectionKey.OP_ACCEPT);
                         eventHandler.handleEvent(selectionKey);//需要event类型事件
-                        it.remove();
                     }
                     if(selectionKey.isReadable()){//可读事件
                         ReadEventHandler eventHandler = (ReadEventHandler)registers.get(SelectionKey.OP_READ);
                         eventHandler.handleEvent(selectionKey);
-                        it.remove();
                     }
                     if(selectionKey.isWritable()){//可写事件
                         WriteEventHandler eventHandler = (WriteEventHandler)registers.get(SelectionKey.OP_WRITE);
                         eventHandler.handleEvent(selectionKey);
-                        it.remove();
                     }
+                    it.remove();
                 }
             }catch (Exception e){
                 e.printStackTrace();
