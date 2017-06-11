@@ -1,5 +1,7 @@
 package com.blue.thrift.thread.pool;
 
+import java.util.HashMap;
+import java.util.TreeMap;
 import java.util.concurrent.*;
 
 /**
@@ -8,7 +10,7 @@ import java.util.concurrent.*;
 public class MyThreadPool {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         //获取当前设备CPU的个数
         int cpuNum = Runtime.getRuntime().availableProcessors();
         System.out.print("cpuNum=" + cpuNum);
@@ -21,7 +23,15 @@ public class MyThreadPool {
         ExecutorService s3 = Executors.newScheduledThreadPool(3);
 
         s1.execute(new Thread());//执行一个线程
-        s1.submit(new Thread());
+        s1.isShutdown();//判断线程池是否被关闭
+        s1.shutdown();
+        s1.shutdownNow();
+
+        s1.awaitTermination(200, TimeUnit.SECONDS);//等待提交的任务执行完
+        Future ff = s1.submit(new Thread());
+        ff.cancel(true);
+
+
         Semaphore sem = new Semaphore(300);
         sem.tryAcquire();
 
@@ -38,7 +48,7 @@ public class MyThreadPool {
         ThreadPoolExecutor myCachedThreadPool = new ThreadPoolExecutor(0, Integer.MAX_VALUE,
                 60L, TimeUnit.SECONDS,
                 new SynchronousQueue<Runnable>());
-
+//ConcurrentHashMap
         //提交任务
 //        customPool.execute();
 //        customPool.submit();

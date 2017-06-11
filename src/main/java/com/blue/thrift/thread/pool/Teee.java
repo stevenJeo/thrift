@@ -10,11 +10,12 @@ public class Teee {
 
     public static void main(String[] args) throws Exception {
 
-//        Object lock = new Object();
+        Object lock = new Object();
 //
-//        Thread t = new Thread(new Run_1(lock));
-//        t.setName("Test-Thread——1");
-//        t.start();
+        Thread t = new Thread(new Run_1(lock));
+        t.setName("Test-Thread——1");
+        t.start();
+//        t.stop();
 //
 ////        Thread.sleep(1000);
 //

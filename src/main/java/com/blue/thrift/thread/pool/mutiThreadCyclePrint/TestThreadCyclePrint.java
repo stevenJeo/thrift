@@ -1,9 +1,13 @@
 package com.blue.thrift.thread.pool.mutiThreadCyclePrint;
 
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * Created by zhouzhishuai on 2017/5/22.
  */
 public class TestThreadCyclePrint {
+
 
     /**
      * 三个线程循环打印A、B、C
@@ -27,5 +31,8 @@ public class TestThreadCyclePrint {
         Thread.sleep(1000);//保证ta线程先启动
         tb.start();
         tc.start();
+
+
+        Lock ll = new ReentrantLock(true);
     }
 }

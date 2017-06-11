@@ -29,7 +29,7 @@ public class NIOtest {
         serverChannel.configureBlocking(false);
 
         serverChannel.register(selector, SelectionKey.OP_ACCEPT);
-        serverChannel.register(selector, SelectionKey.OP_READ);
+//        serverChannel.register(selector, SelectionKey.OP_READ);
 
 
         //通道2
@@ -45,7 +45,7 @@ public class NIOtest {
 
 //        serverChannel.register(reactor.getSelector(), SelectionKey.OP_CONNECT);
         serverChannel.register(reactor.getSelector(), SelectionKey.OP_ACCEPT);
-        serverChannel.register(reactor.getSelector(), SelectionKey.OP_READ);
+//        serverChannel.register(reactor.getSelector(), SelectionKey.OP_READ);
 
 
 //        serverChannel_2.register(reactor.getSelector(), SelectionKey.OP_ACCEPT);
@@ -66,6 +66,11 @@ public class NIOtest {
         reactor.registerEvenHandler(SelectionKey.OP_WRITE, new WriteEventHandler(reactor.getSelector()));
 
         reactor.run();
+
+
+        Thread.currentThread().interrupt();
+
+
     }
 
 }
