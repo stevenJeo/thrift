@@ -1,5 +1,6 @@
 package com.blue.thrift.aop;
 
+import org.springframework.aop.framework.AopContext;
 import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.cglib.proxy.MethodInterceptor;
 import org.springframework.cglib.proxy.MethodProxy;
@@ -18,9 +19,11 @@ public class CglibProxy implements MethodInterceptor {
         return enhancer.create();
     }
 
-
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
+
+
+        AopContext.currentProxy();
 
         Object result = methodProxy.invokeSuper(o, objects);
 
