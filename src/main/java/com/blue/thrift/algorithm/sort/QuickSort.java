@@ -1,4 +1,4 @@
-package com.blue.thrift.sort;
+package com.blue.thrift.algorithm.sort;
 
 /**
  * Created by zhouzhishuai on 2017/5/22.
