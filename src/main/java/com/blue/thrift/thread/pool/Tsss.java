@@ -46,7 +46,7 @@ public class Tsss {
     }
 
     public static void main(String[] args){
-        System.out.print("github..start ma..."+"\n");
+        System.out.print("github.22.start ma..."+"\n");
 
     }
 
