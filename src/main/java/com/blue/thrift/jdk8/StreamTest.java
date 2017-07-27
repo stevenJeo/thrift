@@ -26,7 +26,7 @@ public class StreamTest {
                 .skip(2)
                 .limit(4)
                 .sum());
-//shesh
+//shesh123123
     }
 
 }
