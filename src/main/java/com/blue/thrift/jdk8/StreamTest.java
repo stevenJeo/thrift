@@ -13,8 +13,8 @@ public class StreamTest {
 
     public static void main(String[] args){
         List<String> list = new ArrayList<String>();
-        list.add("123");
-        list.add("123");
+        list.add("123456");
+        list.add("123456");
 
         System.out.print(list.stream().filter(p -> p.equals("222")).findFirst());
 
@@ -27,7 +27,7 @@ public class StreamTest {
                 .limit(4)
                 .sum());
 
-//123123
+//abcabc new fixed
     }
 
 }
