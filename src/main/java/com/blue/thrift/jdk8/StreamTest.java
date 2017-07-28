@@ -27,7 +27,7 @@ public class StreamTest {
                 .limit(4)
                 .sum());
 
-//sheshasdhajs fixed
+//sheshas github
     }
 
 }
