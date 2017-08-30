@@ -34,11 +34,17 @@ public class MDigest {
         shaDigest.update(plantTxt.getBytes());//更新要计算的内容
         byte[] shaEncode = shaDigest.digest();//完成哈希计算，得到摘要
 
+        //SHA摘要
+        MessageDigest sha_1_Digest = MessageDigest.getInstance("SHA-1");
+        sha_1_Digest.update(plantTxt.getBytes());//更新要计算的内容
+        byte[] sha_1_Encode = sha_1_Digest.digest();//完成哈希计算，得到摘要
 
         System.out.println("=============================");
         System.out.println("原文：" + plantTxt);
         System.out.println("MD5摘要：" + Base64.encodeBase64URLSafeString(md5Encode));
         System.out.println("SHA摘要：" + Base64.encodeBase64URLSafeString(shaEncode));
+        System.out.println("SHA-1摘要：" + Base64.encodeBase64URLSafeString(sha_1_Encode));
+
 
         //HMAC摘要
         byte[] secretKey = "Secret_Key".getBytes("UTF8");

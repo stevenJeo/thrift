@@ -18,11 +18,15 @@ import java.security.spec.X509EncodedKeySpec;
  * <p>
  * 签名时要使用私钥和待签名数据，验证时则需要公钥、签名值和待签名数据，其核心算法主要是消息摘要算法。
  * <p>
+ *
+ * @see ## http://blog.csdn.net/lll350203041/article/details/41482017
  * Created by zhishuai.zhou on 2017/8/29.
  */
 public class MySignature {
 
-    public static final String KEY_ALGORITHM = "DSA";
+    private static final String KEY_ALGORITHM = "DSA";
+    private KeyFactory keyFactory;
+    private Signature signature;
 
     public enum DsaTypeEn {
         MD5withDSA, SHA1withDSA
@@ -35,40 +39,40 @@ public class MySignature {
 
     private KeyPair keyPair;
 
+    //初始化密钥对
     public MySignature() throws Exception {
-        keyPair = initKey();
+        // 初始化密钥对生成器
+        KeyPairGenerator keyPairGen = KeyPairGenerator.getInstance(KEY_ALGORITHM);
+        // 实例化密钥对生成器
+        keyPairGen.initialize(KEY_SIZE);
+        // 实例化密钥对
+        keyPair = keyPairGen.genKeyPair();
+        keyFactory = KeyFactory.getInstance(KEY_ALGORITHM);
+        signature = Signature.getInstance(DsaTypeEn.SHA1withDSA.name());
     }
 
     public byte[] signature(byte[] data, byte[] privateKey) throws Exception {
+        //私钥用 PKCS#8 编码保存
         PKCS8EncodedKeySpec keySpec = new PKCS8EncodedKeySpec(privateKey);
-        KeyFactory keyFactory = KeyFactory.getInstance(KEY_ALGORITHM);
         PrivateKey key = keyFactory.generatePrivate(keySpec);
 
-        Signature signature = Signature.getInstance(DsaTypeEn.SHA1withDSA.name());
         signature.initSign(key);
         signature.update(data);
         return signature.sign();
     }
 
     public boolean verify(byte[] data, byte[] publicKey, byte[] sign) throws Exception {
+        //公钥用 X.509 编码保存
         X509EncodedKeySpec keySpec = new X509EncodedKeySpec(publicKey);
-        KeyFactory keyFactory = KeyFactory.getInstance(KEY_ALGORITHM);
+
         PublicKey key = keyFactory.generatePublic(keySpec);
 
-        Signature signature = Signature.getInstance(DsaTypeEn.SHA1withDSA.name());
+
         signature.initVerify(key);
         signature.update(data);
         return signature.verify(sign);
     }
 
-    private KeyPair initKey() throws Exception {
-        // 初始化密钥对生成器
-        KeyPairGenerator keyPairGen = KeyPairGenerator.getInstance(KEY_ALGORITHM);
-        // 实例化密钥对生成器
-        keyPairGen.initialize(KEY_SIZE);
-        // 实例化密钥对
-        return keyPairGen.genKeyPair();
-    }
 
     public byte[] getPublicKey() {
         return keyPair.getPublic().getEncoded();
@@ -86,6 +90,7 @@ public class MySignature {
         byte[] sign = dsa.signature(msg.getBytes(), dsa.getPrivateKey());
         boolean flag = dsa.verify(msg.getBytes(), dsa.getPublicKey(), sign);
         String result = flag ? "数字签名匹配" : "数字签名不匹配";
+
         System.out.println("数字签名：" + Base64.encodeBase64URLSafeString(sign));
         System.out.println("验证结果：" + result);
 
