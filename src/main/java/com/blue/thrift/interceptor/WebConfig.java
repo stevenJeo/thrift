@@ -12,7 +12,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 /**
  * Created by zhangshunsheng on 2017/1/6.
  */
-@Configuration
+//@Configuration
 //@Import({GlobalDateFormatJsonConfiguration.class,RestTemplateConfiguration.class})
 public class WebConfig extends WebMvcConfigurerAdapter {
 

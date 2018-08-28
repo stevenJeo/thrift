@@ -1,6 +1,5 @@
 package com.blue.thrift.tst;
 
-import org.springframework.beans.factory.FactoryBean;
 
 import java.lang.reflect.Field;
 

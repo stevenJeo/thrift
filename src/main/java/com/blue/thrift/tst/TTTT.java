@@ -4,7 +4,7 @@ package com.blue.thrift.tst;
 
 //import org.apache.commons.codec.binary.StringUtils;
 
-import org.apache.tomcat.util.codec.binary.StringUtils;
+//import org.apache.tomcat.util.codec.binary.StringUtils;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
