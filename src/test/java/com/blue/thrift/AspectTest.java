@@ -28,6 +28,6 @@ public class AspectTest {
 
         homeController.nonLog("param");
 
-        homeController.common("com。。。。。");
+        homeController.common("cossssm。。。。。");
     }
 }
