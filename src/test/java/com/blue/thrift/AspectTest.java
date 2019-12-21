@@ -28,6 +28,10 @@ public class AspectTest {
 
         homeController.nonLog("param");
 
-        homeController.common("com。jsj。。。。asjdkhas");
+//<<<<<<< HEAD
+//        homeController.common("com。jsj。。。。asjdkhas");
+//=======
+//        homeController.common("cossssm。。。。。");
+//>>>>>>> origin/testBranch
     }
 }
