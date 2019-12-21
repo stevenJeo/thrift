@@ -20,6 +20,8 @@ public class AopTest implements InvocationHandler {
 //        Proxy.newProxyInstance();
 
 
-        return null;
+        Object result = method.invoke(proxy, args);
+
+        return result;
     }
 }
