@@ -1,7 +1,7 @@
 package com.blue.thrift.java.thread.pool.threadGroup;
 
 /**
- * Created by zhouzhishuai on 2017/5/30.
+ * Created by zs on 2017/5/30.
  */
 public class Main {
     public static void main(String args[]) throws Exception {

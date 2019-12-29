@@ -1,7 +1,7 @@
 package com.blue.thrift.java.thread.pool.mutiThreadCyclePrint;
 
 /**
- * Created by zhouzhishuai on 2017/5/22.
+ * Created by zs on 2017/5/22.
  */
 public class BThread implements Runnable {
     public static boolean isStop = false;

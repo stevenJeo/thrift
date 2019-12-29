@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.Date;
 
 /**
- * Created by zhouzhishuai on 2017/7/26.
+ * Created by zs on 2017/7/26.
  */
 public class ImgCompress {
     private Image img;
@@ -22,7 +22,7 @@ public class ImgCompress {
     @SuppressWarnings("deprecation")
     public static void main(String[] args) throws Exception {
         System.out.println("开始：" + new Date().toLocaleString());
-        ImgCompress imgCom = new ImgCompress("/Users/zhouzhishuai/Downloads/bb3.png");
+        ImgCompress imgCom = new ImgCompress("/Users/zs/Downloads/bb3.png");
         imgCom.resizeFix(400, 400);
         System.out.println("结束：" + new Date().toLocaleString());
     }
@@ -83,7 +83,7 @@ public class ImgCompress {
         // SCALE_SMOOTH 的缩略算法 生成缩略图片的平滑度的 优先级比速度高 生成的图片质量比较好 但速度慢
         BufferedImage image = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
         image.getGraphics().drawImage(img, 0, 0, w, h, null); // 绘制缩小后的图
-        File destFile = new File("/Users/zhouzhishuai/Downloads/nfsq1111.jpg");
+        File destFile = new File("/Users/zs/Downloads/nfsq1111.jpg");
         FileOutputStream out = new FileOutputStream(destFile); // 输出到文件流
         // 可以正常实现bmp、png、gif转jpg
         JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder(out);

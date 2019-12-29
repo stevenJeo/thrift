@@ -5,7 +5,7 @@ import org.springframework.beans.factory.BeanFactoryUtils;
 import org.springframework.beans.factory.FactoryBean;
 
 /**
- * Created by zhouzhishuai on 2017/5/18.
+ * Created by zs on 2017/5/18.
  */
 public class MyFactoryBean implements FactoryBean {
 

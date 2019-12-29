@@ -1,7 +1,7 @@
 package com.blue.thrift.java.thread.pool;
 
 /**
- * Created by zhouzhishuai on 2017/5/23.
+ * Created by zs on 2017/5/23.
  */
 public class Teee {
 

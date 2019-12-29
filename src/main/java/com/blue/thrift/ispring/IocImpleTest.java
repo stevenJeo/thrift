@@ -10,7 +10,7 @@ import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.XmlWebApplicationContext;
 
 /**
- * Created by zhouzhishuai on 2017/6/11.
+ * Created by zs on 2017/6/11.
  */
 public class IocImpleTest {
 

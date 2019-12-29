@@ -3,7 +3,7 @@ package com.blue.thrift.java.thread.pool;
 import java.util.concurrent.*;
 
 /**
- * Created by zhouzhishuai on 2017/5/18.
+ * Created by zs on 2017/5/18.
  */
 public class MyThreadPool {
 

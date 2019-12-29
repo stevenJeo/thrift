@@ -98,7 +98,7 @@ public class Sample {
     }
 
     public static void main(String args[]) throws IOException, InterruptedException {
-        String path = "/Users/zhouzhishuai/code";
+        String path = "/Users/zs/code";
         System.out.println("watch path=" + path);
         new Sample(Paths.get(path)).handleEvents();
     }

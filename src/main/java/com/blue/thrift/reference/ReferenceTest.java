@@ -6,7 +6,7 @@ import java.lang.ref.SoftReference;
 import java.lang.ref.WeakReference;
 
 /**
- * Created by zhouzhishuai on 2017/6/12.
+ * Created by zs on 2017/6/12.
  *
  * java中的引用级别：强引用 > 软引用 > 弱引用 > 虚引用
  *

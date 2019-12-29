@@ -4,7 +4,7 @@ package com.blue.thrift.tst;
 import java.lang.reflect.Field;
 
 /**
- * Created by zhouzhishuai on 2017/5/17.
+ * Created by zs on 2017/5/17.
  */
 public class ChangeStringValue {
 

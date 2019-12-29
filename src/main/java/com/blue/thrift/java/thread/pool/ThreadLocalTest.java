@@ -1,7 +1,7 @@
 package com.blue.thrift.java.thread.pool;
 
 /**
- * Created by zhouzhishuai on 2017/6/8.
+ * Created by zs on 2017/6/8.
  */
 public class ThreadLocalTest {
 

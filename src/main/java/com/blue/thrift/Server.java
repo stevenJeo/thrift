@@ -10,7 +10,7 @@ import org.apache.thrift.server.TThreadPoolServer.Args;
 import org.apache.thrift.transport.*;
 
 /**
- * Created by zhouzhishuai on 2017/4/13.
+ * Created by zs on 2017/4/13.
  */
 public class Server {
 

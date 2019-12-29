@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 参考： https://github.com/kasun04/rnd/tree/master/nio-reactor
- * Created by zhouzhishuai on 2017/5/16.
+ * Created by zs on 2017/5/16.
  */
 public class ReactorSimple {
 

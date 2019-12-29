@@ -11,7 +11,7 @@ import java.lang.reflect.Proxy;
 import java.util.concurrent.ArrayBlockingQueue;
 
 /**
- * Created by zhouzhishuai on 2017/5/24.
+ * Created by zs on 2017/5/24.
  */
 public class AopTest implements InvocationHandler {
     @Override
@@ -53,7 +53,7 @@ public class AopTest implements InvocationHandler {
 //        proxyPlayer.playHappy();
 //
 //
-        ClassPrint.proxy(null, proxyPlayer.getClass().getInterfaces());
+//        ClassPrint.proxy(null, proxyPlayer.getClass().getInterfaces());
 
 
     }

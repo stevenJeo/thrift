@@ -5,7 +5,7 @@ import javassist.*;
 import java.lang.reflect.Method;
 
 /**
- * Created by zhouzhishuai on 2017/5/29.
+ * Created by zs on 2017/5/29.
  */
 public class CreateClass {
 

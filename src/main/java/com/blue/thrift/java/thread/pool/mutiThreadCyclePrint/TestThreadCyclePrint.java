@@ -4,7 +4,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * Created by zhouzhishuai on 2017/5/22.
+ * Created by zs on 2017/5/22.
  */
 public class TestThreadCyclePrint {
 

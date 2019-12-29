@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Created by zhouzhishuai on 2017/4/28.
+ * Created by zs on 2017/4/28.
  */
 public class TestConcurrentModificationException {
 

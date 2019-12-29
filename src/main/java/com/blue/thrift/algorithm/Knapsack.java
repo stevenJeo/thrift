@@ -1,7 +1,7 @@
 package com.blue.thrift.algorithm;
 
 /**
- * Created by zhouzhishuai on 2017/6/18.
+ * Created by zs on 2017/6/18.
  */
 public class Knapsack {
 

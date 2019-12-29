@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by zhouzhishuai on 2017/6/18.
+ * Created by zs on 2017/6/18.
  * <p>
  * 4、数据结构与算法
  * (1)掌握线性表和树的特点并熟练运用。

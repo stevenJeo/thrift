@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Created by zhouzhishuai on 2017/5/22.
+ * Created by zs on 2017/5/22.
  */
 public class QuickSort {
 

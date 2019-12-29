@@ -9,7 +9,7 @@ import org.apache.thrift.transport.TTransport;
 import org.apache.thrift.transport.TTransportException;
 
 /**
- * Created by zhouzhishuai on 2017/4/13.
+ * Created by zs on 2017/4/13.
  */
 public class Client {
     public void startClient() throws Exception{

@@ -5,7 +5,7 @@ import com.blue.thrift.HelloAsyncClient;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Created by zhouzhishuai on 2017/5/8.
+ * Created by zs on 2017/5/8.
  */
 public class TestMain {
 

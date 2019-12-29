@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by zhouzhishuai on 2017/5/15.
+ * Created by zs on 2017/5/15.
  */
 public class MyInterceptor extends HandlerInterceptorAdapter{//继承适配器不需要实现接口中的每一个方法
 

@@ -3,7 +3,7 @@ package com.blue.thrift.java.thread.pool.waitandnotify;
 import java.util.concurrent.*;
 
 /**
- * Created by zhouzhishuai on 2017/5/19.
+ * Created by zs on 2017/5/19.
  */
 public class ThreadWaitAndNotify {
 

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by zhouzhishuai on 2017/5/19.
+ * Created by zs on 2017/5/19.
  */
 public class ObjectWait {
     private static ObjectWait object = null;

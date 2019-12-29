@@ -12,7 +12,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by zhouzhishuai on 2017/4/13.
+ * Created by zs on 2017/4/13.
  */
 public class HelloAsyncClient {
 

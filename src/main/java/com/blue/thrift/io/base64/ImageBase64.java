@@ -8,7 +8,7 @@ import java.io.InputStream;
 import java.util.Base64;
 
 /**
- * Created by zhouzhishuai on 2017/7/25.
+ * Created by zs on 2017/7/25.
  */
 public class ImageBase64 {
 

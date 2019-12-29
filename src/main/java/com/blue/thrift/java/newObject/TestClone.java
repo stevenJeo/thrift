@@ -1,7 +1,7 @@
 package com.blue.thrift.java.newObject;
 
 /**
- * Created by zhouzhishuai on 2017/5/11.
+ * Created by zs on 2017/5/11.
  */
 public class TestClone {
 

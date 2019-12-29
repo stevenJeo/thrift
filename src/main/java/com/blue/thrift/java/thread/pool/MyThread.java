@@ -3,7 +3,7 @@ package com.blue.thrift.java.thread.pool;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Created by zhouzhishuai on 2017/5/26.
+ * Created by zs on 2017/5/26.
  */
 public class MyThread {
 

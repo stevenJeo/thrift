@@ -1,7 +1,7 @@
 package com.blue.thrift.bench;
 
 /**
- * Created by zhouzhishuai on 2017/4/20.
+ * Created by zs on 2017/4/20.
  */
 public class DeadLockTest {
     public static void main(String[] args){

@@ -1,7 +1,7 @@
 package com.blue.thrift.java.thread.threadLocal;
 
 /**
- * Created by zhouzhishuai on 2017/6/11.
+ * Created by zs on 2017/6/11.
  * <p/>
  * 1.线程中的变量如何保证各个线程对象中会不影响？
  * </>各线程中为使用的变量维护一个独立的变量副本（该变量用ThreadLocal修饰，）

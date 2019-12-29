@@ -4,7 +4,7 @@ import com.blue.thrift.service.Hello;
 import org.apache.thrift.async.AsyncMethodCallback;
 
 /**
- * Created by zhouzhishuai on 2017/4/13.
+ * Created by zs on 2017/4/13.
  */
 public class HelloAsyncImpl implements Hello.AsyncIface {
 
