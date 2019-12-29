@@ -12,7 +12,7 @@ import org.apache.thrift.transport.TTransportException;
  * Created by zs on 2017/4/13.
  */
 public class Client {
-    public void startClient() throws Exception{
+    public void startClient() throws Exception {
         try {
             System.out.println("thrift client connext server at 1234 port ");
             TTransport transport = new TSocket("localhost", 1234);
@@ -21,10 +21,10 @@ public class Client {
             Hello.Client client = new Hello.Client(protocol);
 
             transport.open();
-            for(int i=0; i<1000; i++){
+            for (int i = 0; i < 1000; i++) {
                 System.out.println(client.helloString("client: pgs"));
                 System.out.println("\n sleep ...");
-                Thread.sleep(1000l);
+                Thread.sleep(1000L);
             }
 
             transport.close();
@@ -35,7 +35,8 @@ public class Client {
             e.printStackTrace();
         }
     }
-    public static void main(String[] args) throws Exception{
+
+    public static void main(String[] args) throws Exception {
         System.out.println("thrift client init ");
         Client client = new Client();
         System.out.println("thrift client start ");
