@@ -1,7 +1,7 @@
 package com.blue.thrift.aop;
 
 /**
- * Created by zhishuai.zhou on 2019/12/27.
+ * Created by zs on 2019/12/27.
  */
 public class Player implements Play {
 

@@ -20,7 +20,7 @@ import java.security.spec.X509EncodedKeySpec;
  * <p>
  *
  * @see ## http://blog.csdn.net/lll350203041/article/details/41482017
- * Created by zhishuai.zhou on 2017/8/29.
+ * Created by zs on 2017/8/29.
  */
 public class MySignature {
 

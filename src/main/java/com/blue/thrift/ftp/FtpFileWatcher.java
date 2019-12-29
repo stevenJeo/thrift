@@ -4,7 +4,7 @@ import java.nio.file.Path;
 import java.nio.file.WatchService;
 
 /**
- * Created by zhishuai.zhou on 2018/12/12.
+ * Created by zs on 2018/12/12.
  */
 public class FtpFileWatcher {
 

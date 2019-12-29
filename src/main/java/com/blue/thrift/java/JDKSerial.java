@@ -6,7 +6,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 /**
- * Created by zhishuai.zhou on 2019/12/29.
+ * Created by zs on 2019/12/29.
  */
 public class JDKSerial {
 

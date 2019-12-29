@@ -3,7 +3,7 @@ package com.blue.thrift.java;
 import java.io.Serializable;
 
 /**
- * Created by zhishuai.zhou on 2019/12/29.
+ * Created by zs on 2019/12/29.
  */
 public class TestBean implements Serializable {
 

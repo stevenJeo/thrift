@@ -15,7 +15,7 @@ import java.security.MessageDigest;
  * MD5和SHA1分别是MD、SHA算法系列中最有代表性的算法。
  * 如今，MD5已被发现有许多漏洞，从而不再安全。SHA算法比MD算法的摘要长度更长，也更加安全。
  * <p>
- * Created by zhishuai.zhou on 2017/8/29.
+ * Created by  on 2017/8/29.
  */
 public class MDigest {
 

@@ -4,7 +4,7 @@ package com.blue.thrift.page;
 import java.io.Serializable;
 
 /**
- * Created by zhishuai.zhou on 2018/5/28.
+ * Created by zs on 2018/5/28.
  */
 public class IdPageRequest {
     private Page page = new Page(15, 1);

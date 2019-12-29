@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
- * Created by zhishuai.zhou on 2019/5/25.
+ * Created by zs on 2019/5/25.
  */
 public class LockTest {
     private static Lock lock = new ReentrantLock();

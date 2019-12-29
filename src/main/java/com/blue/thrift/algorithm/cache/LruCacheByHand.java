@@ -3,7 +3,7 @@ package com.blue.thrift.algorithm.cache;
 import java.util.HashMap;
 
 /**
- * Created by zhishuai.zhou on 2019/12/19.
+ * Created by zs on 2019/12/19.
  */
 public class LruCacheByHand {
 

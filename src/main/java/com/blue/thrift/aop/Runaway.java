@@ -1,7 +1,7 @@
 package com.blue.thrift.aop;
 
 /**
- * Created by zhishuai.zhou on 2019/12/28.
+ * Created by zs on 2019/12/28.
  */
 public interface Runaway {
 

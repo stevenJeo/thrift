@@ -25,7 +25,7 @@ import java.util.*;
  * 则说明当前的字符串已经是删除最少无效的括号的最优解了，接着就对队列中的其他字符串进行 check 即可。
  * 这道题目的动画与 LeetCode 第 20 号问题--有效的括号很类似，这里就拿出来进行参考理解一下，区别点就在于多了遍历和哈希存储。
  * <p>
- * Created by zhishuai.zhou on 2019/5/24.
+ * Created by zs on 2019/5/24.
  */
 public class InvalidBracketSearch {
 

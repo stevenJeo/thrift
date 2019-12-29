@@ -3,7 +3,7 @@ package com.blue.thrift.algorithm.sort;
 import java.util.Arrays;
 
 /**
- * Created by zhishuai.zhou on 2019/7/27.
+ * Created by zs on 2019/7/27.
  */
 public class StringUtil {
 

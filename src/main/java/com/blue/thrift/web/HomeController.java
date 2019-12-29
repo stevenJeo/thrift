@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * Created by zhishuai.zhou on 2018/8/27.
+ * Created by zs on 2018/8/27.
  */
 @Controller
 @RequestMapping({"/base/home/v1", "/base/home/v2"})

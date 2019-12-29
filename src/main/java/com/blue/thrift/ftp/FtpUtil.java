@@ -1,7 +1,7 @@
 package com.blue.thrift.ftp;
 
 /**
- * Created by zhishuai.zhou on 2018/12/12.
+ * Created by zs on 2018/12/12.
  */
 
 import java.io.*;

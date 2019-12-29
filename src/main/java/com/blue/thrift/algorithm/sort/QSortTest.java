@@ -5,7 +5,7 @@ import com.google.common.collect.Sets;
 import java.util.*;
 
 /**
- * Created by zhishuai.zhou on 2019/12/16.
+ * Created by zs on 2019/12/16.
  */
 public class QSortTest {
 

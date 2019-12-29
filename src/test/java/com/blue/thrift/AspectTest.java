@@ -10,7 +10,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import javax.annotation.Resource;
 
 /**
- * Created by zhishuai.zhou on 2018/8/27.
+ * Created by zs on 2018/8/27.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration

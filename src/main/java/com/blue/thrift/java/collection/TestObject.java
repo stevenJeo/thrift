@@ -1,7 +1,7 @@
 package com.blue.thrift.java.collection;
 
 /**
- * Created by zhishuai.zhou on 2019/12/26.
+ * Created by zs on 2019/12/26.
  */
 public class TestObject {
 
