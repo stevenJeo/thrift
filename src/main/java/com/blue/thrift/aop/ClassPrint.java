@@ -13,7 +13,7 @@ public class ClassPrint {
     public static void proxy(String path, Class[] classes) {
         byte[] classFile = ProxyGenerator.generateProxyClass("$Proxy0", classes);
 
-        path = "./Player$Proxy0.class";
+        path = "./src/main/java/com/blue/thrift/aop/Player$Proxy0.class";
 
         try (FileOutputStream fos = new FileOutputStream(path)) {
             fos.write(classFile);
