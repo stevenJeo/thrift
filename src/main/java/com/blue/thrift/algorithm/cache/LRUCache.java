@@ -1,4 +1,4 @@
-package com.blue.thrift.cache;
+package com.blue.thrift.algorithm.cache;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

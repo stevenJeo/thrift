@@ -48,6 +48,10 @@ public class MyThreadPool {
         ThreadPoolExecutor myCachedThreadPool = new ThreadPoolExecutor(0, Integer.MAX_VALUE,
                 60L, TimeUnit.SECONDS,
                 new SynchronousQueue<Runnable>());
+//
+//        Future future = customPool.submit();
+//        customPool.execute();
+
 //ConcurrentHashMap
         //提交任务
 //        customPool.execute();

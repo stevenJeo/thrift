@@ -1,4 +1,4 @@
-package com.blue.thrift.jdk8;
+package com.blue.thrift.java.jdk8;
 
 import com.google.common.collect.Lists;
 
@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-import static java.util.stream.Collectors.averagingInt;
 import static java.util.stream.Collectors.groupingBy;
 
 /**

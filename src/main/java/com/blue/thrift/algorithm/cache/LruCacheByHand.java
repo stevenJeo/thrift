@@ -1,8 +1,6 @@
-package com.blue.thrift.cache;
+package com.blue.thrift.algorithm.cache;
 
 import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by zhishuai.zhou on 2019/12/19.
@@ -178,16 +176,18 @@ public class LruCacheByHand {
     /**
      * 递归实现
      */
-    private static int rec_dp(int arr) {
-
-        Map<String, Object> amp = new ConcurrentHashMap<String, Object>(3);
-        amp.put();
-
-        Map<String, Object> hashMap = new HashMap<String, Object>(3);
-        hashMap.put();
-
-
-    }
+//    private static int rec_dp(int arr) {
+//
+//        Map<String, Object> amp = new ConcurrentHashMap<String, Object>(3);
+//        amp.put();
+//        amp.size();
+//
+//        Map<String, Object> hashMap = new HashMap<String, Object>(3);
+//        hashMap.put();
+//        hashMap.size();
+//
+//
+//    }
 
 
 }

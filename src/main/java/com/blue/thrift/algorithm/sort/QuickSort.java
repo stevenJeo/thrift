@@ -63,31 +63,6 @@ public class QuickSort {
     //========================================= 实现二 ===========================================
 
     /**
-     * 返回中位数下标，
-     * 将数组中小于基准数的元素放在其左边，大于基准数的元素放在其右边
-     */
-    public static int setPivot(Integer[] arr, int left, int right) {
-
-        while (left < right) {
-
-            //从右向左找到小于基准数的坐标，并交换
-            while (left < right && arr[left] <= arr[right]) {
-                right--;
-            }
-            swap(arr, left, right);
-
-
-            //从左向右找到大于基准数的坐标，并交换
-            while (left < right && arr[left] <= arr[right]) {
-                left++;
-            }
-            swap(arr, left, right);
-        }
-
-        return left;
-    }
-
-    /**
      * 交换指定坐标的两个元素
      */
     private static void swap(Integer[] arr, int left, int right) {
@@ -98,6 +73,26 @@ public class QuickSort {
         }
     }
 
+    /**
+     * 返回中位数下标，
+     * 将数组中小于基准数的元素放在其左边，大于基准数的元素放在其右边
+     */
+    public static int setPivot(Integer[] arr, int left, int right) {
+        while (left < right) {
+            //从左向右找到大于基准数的坐标，并交换
+            while (left < right && arr[left] <= arr[right]) {
+                left++;
+            }
+            swap(arr, left, right);
+
+            //从右向左找到小于基准数的坐标，并交换
+            while (left < right && arr[left] <= arr[right]) {
+                right--;
+            }
+            swap(arr, left, right);
+        }
+        return left;
+    }
 
     /**
      * 传统快排实现
@@ -138,30 +133,32 @@ public class QuickSort {
 //        int[] sssad = {2,21,41};
 //
 //
-//        Integer arr[] = {49, 38, 65, 97, 76, 13, 27, 49, 78, 34, 12, 64, 5, 4, 62, 99, 98, 54, 56, 17, 18, 23, 34, 15, 35, 25, 53, 51};
+        Integer[] arr = {0, 49, 38, 65, 97, 76, 13, 27, 49, 78, 34, 12, 64, 5, 4, 62, 99, 98, 54, 56, 17, 18, 23, 34, 15, 35, 25, 53, 51};
 
 //        int p = parti(arr, 0, arr.length - 1);
 
+        QSort(arr);
+        System.out.println(StringUtil.printArray(arr));
 
-            int[] fushu = {-2, -3, 5, 8, -4, 2, -3, 7, 12, -88, -23, 35};
 
-        setParted(fushu);
-        System.out.println("\n");
-        setParted1(fushu,0,fushu.length-1);
+//            int[] fushu = {-2, -3, 5, 8, -4, 2, -3, 7, 12, -88, -23, 35};
+//
+//        setParted(fushu);
+//        System.out.println("\n");
+//        setParted1(fushu,0,fushu.length-1);
     }
 
 
-
-   private static void fuzi(int[] a){
+    private static void fuzi(int[] a) {
 
         int fu = 0;
-        for(int i = 0; i < a.length; i++){
-            if(a[i] < 0){
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] < 0) {
                 int tmp = a[i];
                 a[i] = a[fu];
 
             }
-            if(a[i] > 0){
+            if (a[i] > 0) {
                 fu++;
             }
 
@@ -170,14 +167,12 @@ public class QuickSort {
     }
 
 
-
-
-    public static void setParted(int[] a){
+    public static void setParted(int[] a) {
 //        int temp=0;
         int border = -1;
 
-        for(int cur = 0; cur < a.length; cur++){
-            if(a[cur] < 0){
+        for (int cur = 0; cur < a.length; cur++) {
+            if (a[cur] < 0) {
                 int temp = a[cur];
 
                 a[cur] = a[border + 1];
@@ -186,42 +181,42 @@ public class QuickSort {
                 border++;
             }
         }
-        for(int j=0;j<a.length;j++){
+        for (int j = 0; j < a.length; j++) {
             System.out.print(a[j] + ",");
         }
     }
 
 
-
-    public static void setParted1(int[] a,int left,int right){
-        if(left>=right||left==a.length||right==0){
-            for(int i=0;i<a.length;i++){
+    public static void setParted1(int[] a, int left, int right) {
+        if (left >= right || left == a.length || right == 0) {
+            for (int i = 0; i < a.length; i++) {
                 System.out.println(a[i]);
-            }
-            return ;
-        }
-        while(a[left]<0){
-            left++;
-        }
-        while(a[right]>=0){
-            right--;
-        }
-        if(left>=right||left==a.length||right==0){
-            for(int i=0;i<a.length;i++){
-                System.out.print(a[i]+",");
             }
             return;
         }
-        swap(a,left,right);
+        while (a[left] < 0) {
+            left++;
+        }
+        while (a[right] >= 0) {
+            right--;
+        }
+        if (left >= right || left == a.length || right == 0) {
+            for (int i = 0; i < a.length; i++) {
+                System.out.print(a[i] + ",");
+            }
+            return;
+        }
+        swap(a, left, right);
         left++;
         right--;
-        setParted1(a,left,right);
+        setParted1(a, left, right);
     }
-    private static void swap(int a[],int left,int right){
-        int temp=0;
-        temp=a[left];
-        a[left]=a[right];
-        a[right]=temp;
+
+    private static void swap(int a[], int left, int right) {
+        int temp = 0;
+        temp = a[left];
+        a[left] = a[right];
+        a[right] = temp;
     }
 //    public static void main(String[] args) {
 //        int a[]={1,2,-1,-5,-6,7,-7,-10};

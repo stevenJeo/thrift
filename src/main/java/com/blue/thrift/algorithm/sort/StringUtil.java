@@ -16,4 +16,13 @@ public class StringUtil {
     }
 
 
+    public static String printArray(int[] arr) {
+        StringBuilder s = new StringBuilder();
+        for (int sa : arr) {
+            s.append(sa + ",");
+        }
+        return s.toString();
+    }
+
+
 }

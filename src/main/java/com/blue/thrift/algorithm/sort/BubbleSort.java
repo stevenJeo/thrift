@@ -56,6 +56,7 @@ public class BubbleSort {
 
         System.out.println(StringUtil.printArray(doBubbleSort(arr)));
         System.out.println(StringUtil.printArray(aesSort(arr)));
+        System.out.println(StringUtil.printArray(desSort(arr)));
     }
 
 
@@ -70,6 +71,24 @@ public class BubbleSort {
                     arr[i] = arr[j];
                     arr[j] = tmp;
                  }
+            }
+        }
+        return arr;
+    }
+
+
+
+    public static Integer[] desSort(Integer[] arr){
+
+        for(int i = 0; i < arr.length; i++){
+
+            for(int j = i + 1; j < arr.length; j++){
+                if(arr[i] < arr[j]){
+
+                    int tmp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = tmp;
+                }
             }
         }
         return arr;

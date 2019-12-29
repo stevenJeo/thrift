@@ -1,4 +1,4 @@
-package com.blue.thrift.jdk8;
+package com.blue.thrift.java.jdk8;
 
 /**
  * Created by zhishuai.zhou on 2017/8/23.
