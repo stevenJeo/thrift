@@ -1,5 +1,7 @@
 package com.blue.thrift.java.serial;
 
+import com.alibaba.fastjson.JSON;
+
 import java.io.Serializable;
 
 /**
@@ -42,5 +44,11 @@ public class TestBean implements Serializable {
     @Override
     public String toString() {
         return "name=" + name + ",age=" + age;
+    }
+
+
+    public String transJsonStr() {
+        return JSON.toJSONString(this);
+
     }
 }
