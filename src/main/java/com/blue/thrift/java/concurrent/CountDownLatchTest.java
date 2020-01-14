@@ -4,7 +4,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by zhishuai.zhou on 2020/1/4.
+ * Created by zs on 2020/1/4.
  */
 public class CountDownLatchTest {
 

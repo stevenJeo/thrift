@@ -3,7 +3,7 @@ package com.blue.thrift.algorithm.leetcode;
 import com.blue.thrift.algorithm.sort.StringUtil;
 
 /**
- * Created by zhishuai.zhou on 2020/1/8.
+ * Created by zs on 2020/1/8.
  */
 public class MaxMinNum {
     /**

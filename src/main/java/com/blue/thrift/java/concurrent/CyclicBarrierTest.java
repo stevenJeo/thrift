@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.concurrent.*;
 
 /**
- * Created by zhishuai.zhou on 2020/1/4.
+ * Created by zs on 2020/1/4.
  */
 public class CyclicBarrierTest implements Runnable {
 

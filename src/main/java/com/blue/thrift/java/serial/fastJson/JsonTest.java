@@ -5,7 +5,7 @@ import com.alibaba.fastjson.serializer.SerializeConfig;
 import com.blue.thrift.java.serial.TestBean;
 
 /**
- * Created by zhishuai.zhou on 2019/12/29.
+ * Created by zs on 2019/12/29.
  */
 public class JsonTest {
 

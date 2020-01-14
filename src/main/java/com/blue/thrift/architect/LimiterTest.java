@@ -5,7 +5,7 @@ import com.google.common.util.concurrent.RateLimiter;
 import java.util.LinkedHashMap;
 
 /**
- * Created by zhishuai.zhou on 2020/1/2.
+ * Created by zs on 2020/1/2.
  */
 public class LimiterTest {
 

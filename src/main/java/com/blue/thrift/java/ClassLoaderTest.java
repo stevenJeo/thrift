@@ -3,7 +3,7 @@ package com.blue.thrift.java;
 import java.net.URLClassLoader;
 
 /**
- * Created by zhishuai.zhou on 2020/1/2.
+ * Created by zs on 2020/1/2.
  */
 public class ClassLoaderTest {
 
