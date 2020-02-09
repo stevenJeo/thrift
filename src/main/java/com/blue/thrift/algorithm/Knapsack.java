@@ -11,8 +11,9 @@ public class Knapsack {
     //来自mac的更新。。。
     //来自mac的更新。。。
     //frommaclocal111
+//fromgithub111
     //asjdaas
-
-//fromlocalmac111
-
+//fromgithub11111
+    //fromlocalmac111
+    //冲突解决了啊
 }
